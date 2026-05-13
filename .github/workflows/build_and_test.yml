@@ -33,5 +33,7 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
+    - name: Add execution permissions
+      run: chmod +x ./gradlew
     - name: Build and Test
-      run: chmod +x ./gradlew build runGameTest
+      run: ./gradlew build runGameTest
