@@ -1,0 +1,6 @@
+{
+  "parent": "aeronautics:block/gyroscopic_propeller_bearing/metal_bearing_plate",
+  "textures": {
+		"2": "simulated_addition:block/directional_gyroscopic_propeller_bearing"
+  }
+}

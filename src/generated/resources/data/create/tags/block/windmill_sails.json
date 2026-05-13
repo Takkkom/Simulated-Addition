@@ -1,0 +1,26 @@
+{
+  "values": [
+    "simulated_addition:oak_sail",
+    "simulated_addition:spruce_sail",
+    "simulated_addition:birch_sail",
+    "simulated_addition:jungle_sail",
+    "simulated_addition:acacia_sail",
+    "simulated_addition:cherry_sail",
+    "simulated_addition:dark_oak_sail",
+    "simulated_addition:mangrove_sail",
+    "simulated_addition:bamboo_sail",
+    "simulated_addition:crimson_sail",
+    "simulated_addition:warped_sail",
+    "simulated_addition:oak_symmetric_sail",
+    "simulated_addition:spruce_symmetric_sail",
+    "simulated_addition:birch_symmetric_sail",
+    "simulated_addition:jungle_symmetric_sail",
+    "simulated_addition:acacia_symmetric_sail",
+    "simulated_addition:cherry_symmetric_sail",
+    "simulated_addition:dark_oak_symmetric_sail",
+    "simulated_addition:mangrove_symmetric_sail",
+    "simulated_addition:bamboo_symmetric_sail",
+    "simulated_addition:crimson_symmetric_sail",
+    "simulated_addition:warped_symmetric_sail"
+  ]
+}

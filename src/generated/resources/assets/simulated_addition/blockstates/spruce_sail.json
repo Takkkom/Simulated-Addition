@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "simulated_addition:block/spruce_sail",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "simulated_addition:block/spruce_sail",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "simulated_addition:block/spruce_sail",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "simulated_addition:block/spruce_sail",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "simulated_addition:block/spruce_sail"
+    },
+    "facing=west": {
+      "model": "simulated_addition:block/spruce_sail",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

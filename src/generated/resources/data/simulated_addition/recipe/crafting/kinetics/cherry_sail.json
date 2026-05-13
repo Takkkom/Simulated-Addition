@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "W": {
+      "item": "minecraft:cherry_planks"
+    }
+  },
+  "pattern": [
+    "WS",
+    "SA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "simulated_addition:cherry_sail"
+  }
+}

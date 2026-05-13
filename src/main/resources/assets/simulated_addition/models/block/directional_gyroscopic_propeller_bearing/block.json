@@ -1,0 +1,7 @@
+{
+  "parent": "aeronautics:block/gyroscopic_propeller_bearing/block",
+  "textures": {
+		"2": "simulated_addition:block/directional_gyroscopic_propeller_bearing",
+		"particle": "simulated_addition:block/directional_gyroscopic_propeller_bearing_side"
+  }
+}

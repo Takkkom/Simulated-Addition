@@ -1,0 +1,6 @@
+{
+  "parent": "aeronautics:block/gyroscopic_propeller_bearing/piston_pole",
+  "textures": {
+		"2": "simulated_addition:block/directional_propeller_bearing"
+  }
+}

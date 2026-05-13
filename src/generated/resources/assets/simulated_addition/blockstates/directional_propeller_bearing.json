@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "simulated_addition:block/directional_propeller_bearing/block",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "simulated_addition:block/directional_propeller_bearing/block",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "simulated_addition:block/directional_propeller_bearing/block",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "simulated_addition:block/directional_propeller_bearing/block",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "simulated_addition:block/directional_propeller_bearing/block"
+    },
+    "facing=west": {
+      "model": "simulated_addition:block/directional_propeller_bearing/block",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "simulated_addition:warped_sail"
+    }
+  },
+  "pattern": [
+    "AA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "simulated_addition:warped_symmetric_sail"
+  }
+}

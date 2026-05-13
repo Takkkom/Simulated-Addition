@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.takkkom.simulated_addition.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinSailBlockPlacementHelper",
+    "MixinPropellerBearingBlockEntity",
+    "MixinBearingContraption"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
