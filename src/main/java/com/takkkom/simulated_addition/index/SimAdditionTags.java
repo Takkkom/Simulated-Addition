@@ -1,15 +1,19 @@
 package com.takkkom.simulated_addition.index;
 
+import com.simibubi.create.AllTags;
 import com.takkkom.simulated_addition.SimulatedAddition;
 import net.createmod.catnip.lang.Lang;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
+
+import static com.simibubi.create.AllTags.NameSpace.MOD;
 
 public class SimAdditionTags {
     public static void register() {
@@ -36,6 +40,7 @@ public class SimAdditionTags {
     public enum AllBlockTags {
         LOW_POWER_SAIL,
         HIGH_POWER_SAIL,
+        FLOATITE,
         ;
 
         public final TagKey<Block> tag;
@@ -64,6 +69,34 @@ public class SimAdditionTags {
 
         public boolean matches(BlockState state) {
             return state.is(tag);
+        }
+    }
+
+    public enum AllItemTags {
+        FLOATITE;
+
+        public final TagKey<Item> tag;
+
+        AllItemTags() {
+            this(NameSpace.MOD);
+        }
+
+        AllItemTags(NameSpace namespace) {
+            this(namespace, null);
+        }
+
+        AllItemTags(NameSpace namespace, @Nullable String pathOverride) {
+            this.tag = TagKey.create(Registries.ITEM, namespace.id(this, pathOverride));
+        }
+
+        @SuppressWarnings("deprecation")
+        public boolean matches(Item item) {
+            return item.builtInRegistryHolder()
+                    .is(tag);
+        }
+
+        public boolean matches(ItemStack stack) {
+            return stack.is(tag);
         }
     }
 }

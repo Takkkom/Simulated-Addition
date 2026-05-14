@@ -1,5 +1,7 @@
 {
   "values": [
+    "simulated_addition:directional_propeller_bearing",
+    "simulated_addition:directional_gyroscopic_propeller_bearing",
     "simulated_addition:oak_sail",
     "simulated_addition:spruce_sail",
     "simulated_addition:birch_sail",
@@ -21,8 +23,6 @@
     "simulated_addition:mangrove_symmetric_sail",
     "simulated_addition:bamboo_symmetric_sail",
     "simulated_addition:crimson_symmetric_sail",
-    "simulated_addition:warped_symmetric_sail",
-    "simulated_addition:directional_propeller_bearing",
-    "simulated_addition:directional_gyroscopic_propeller_bearing"
+    "simulated_addition:warped_symmetric_sail"
   ]
 }

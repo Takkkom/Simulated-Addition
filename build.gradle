@@ -155,11 +155,8 @@ dependencies {
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${project.minecraft_version}:${project.flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${project.registrate_version}")
 
-    compileOnly("dev.simulated_team.simulated:simulated-common-${project.minecraft_version}:${project.create_simulated_version}") { transitive = false }
-    runtimeOnly("dev.simulated_team.simulated:simulated-neoforge-${project.minecraft_version}:${project.create_simulated_version}") { transitive = false }
-
-    compileOnly("dev.eriksonn.aeronautics:aeronautics-common-${project.minecraft_version}:${project.create_aeronautics_version}") { transitive = false }
-    runtimeOnly("dev.eriksonn.aeronautics:aeronautics-neoforge-${project.minecraft_version}:${project.create_aeronautics_version}") { transitive = false }
+    implementation("dev.simulated_team.simulated:simulated-neoforge-${project.minecraft_version}:${project.create_simulated_version}") { transitive = false }
+    implementation("dev.eriksonn.aeronautics:aeronautics-neoforge-${project.minecraft_version}:${project.create_aeronautics_version}") { transitive = false }
 
     //compileOnly("dev.ryanhcode.offroad:offroad-common-${project.minecraft_version}:${project.create_offroad_version}") { transitive = false }
     runtimeOnly("dev.ryanhcode.offroad:offroad-neoforge-${project.minecraft_version}:${project.create_offroad_version}") { transitive = false }

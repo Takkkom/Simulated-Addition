@@ -4,6 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.simibubi.create.foundation.utility.FilesHelper;
 import com.takkkom.simulated_addition.SimulatedAddition;
+import com.takkkom.simulated_addition.data.recipe.SimAdditionRecipeProvider;
 import com.tterrag.registrate.providers.ProviderType;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -50,7 +51,7 @@ public class SimAdditionDatagen {
           */
 
         if (event.includeServer()) {
-            //CreateRecipeProvider.registerAllProcessing(generator, output, lookupProvider);
+            SimAdditionRecipeProvider.registerAllProcessing(generator, output, lookupProvider);
         }
     }
 

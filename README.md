@@ -12,6 +12,9 @@ A small add-on for Create: Simulated and Create: Aeronautics. It adds highly req
 - ### Directional Gyroscopic Propeller Bearing
   - Gyroscopic Propeller Bearings that can change the direction of thrust
   - It is useful for helicopters and other similar vehicles.
+- ### Floatite
+  - It has extremely strong buoyancy, allowing even very heavy contraptions to float on the water's surface.
+  - Even if you destroy it, you can recover it as an item.
 
 ## Features to be added in the future
 - ### Phantom Sail

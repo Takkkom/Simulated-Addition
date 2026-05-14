@@ -1,0 +1,7 @@
+{
+  	"lift_strength": 0.0,
+	"slow_vertical_friction": 1.0,
+	"fast_vertical_friction": 1.0,
+	"slow_horizontal_friction": 0.0,
+	"fast_horizontal_friction": 0.0
+}

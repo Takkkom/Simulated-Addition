@@ -1,0 +1,17 @@
+{
+  "selector": "#simulated_addition:floatite",
+
+  "priority": 1001,
+
+  "properties": {
+    "sable:mass": 0.25,
+    "sable:volume": 10.0,
+    "sable:floating_material": "simulated_addition:floatite"
+  },
+  "overrides": {
+    "type=double": {
+      "sable:mass": 0.5,
+      "sable:volume": 20.0
+    }
+  }
+}
