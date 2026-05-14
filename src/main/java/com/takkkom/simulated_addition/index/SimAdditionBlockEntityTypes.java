@@ -2,6 +2,7 @@ package com.takkkom.simulated_addition.index;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.takkkom.simulated_addition.SimulatedAddition;
+import com.takkkom.simulated_addition.content.blocks.analog_torsion_spring.AnalogTorsionSpringBlockEntity;
 import com.takkkom.simulated_addition.content.blocks.propeller.bearing.directional_gyroscopic_propeller_bearing.DirectionalGyroscopicPropellerBearingBlockEntity;
 import com.takkkom.simulated_addition.content.blocks.propeller.bearing.directional_propeller_bearing.DirectionalPropellerBearingBlockEntity;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
@@ -24,6 +25,15 @@ public class SimAdditionBlockEntityTypes {
             .validBlocks(SimAdditionBlocks.DIRECTIONAL_GYROSCOPIC_PROPELLER_BEARING)
             .renderer(() -> GyroscopicPropellerBearingRenderer::new)
             .register();
+
+    /*
+    public static final BlockEntityEntry<AnalogTorsionSpringBlockEntity> ANALOG_TORSION_SPRING = REGISTRATE
+            .blockEntity("analog_torsion_spring", AnalogTorsionSpringBlockEntity::new)
+            //.visual(() -> TorsionSpringVisual::new)
+            .validBlocks(SimAdditionBlocks.ANALOG_TORSION_SPRING)
+            //.renderer(() -> TorsionSpringRenderer::new)
+            .register();
+     */
 
 
 

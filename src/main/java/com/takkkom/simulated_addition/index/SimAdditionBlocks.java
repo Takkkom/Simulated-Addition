@@ -9,6 +9,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.takkkom.simulated_addition.SimulatedAddition;
 import com.takkkom.simulated_addition.config.server.SimAdditionStress;
+import com.takkkom.simulated_addition.content.blocks.analog_torsion_spring.AnalogTorsionSpringBlock;
 import com.takkkom.simulated_addition.content.blocks.propeller.bearing.directional_gyroscopic_propeller_bearing.DirectionalGyroscopicPropellerBearingBlock;
 import com.takkkom.simulated_addition.content.blocks.propeller.bearing.directional_propeller_bearing.DirectionalPropellerBearingBlock;
 import com.takkkom.simulated_addition.content.blocks.sail.WoodenSailBlock;
@@ -19,15 +20,19 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import dev.eriksonn.aeronautics.index.AeroSoundEvents;
 import dev.eriksonn.aeronautics.index.AeroTags;
 import dev.ryanhcode.sable.index.SableTags;
+import dev.simulated_team.simulated.config.server.blocks.SimStress;
+import dev.simulated_team.simulated.content.blocks.torsion_spring.TorsionSpringBlock;
 import dev.simulated_team.simulated.data.SimBlockStateGen;
 import dev.simulated_team.simulated.index.SimItems;
 import dev.simulated_team.simulated.index.sounds.SimLazySoundType;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -303,6 +308,19 @@ public class SimAdditionBlocks {
                     .register();
 
 
+    /*
+    public static final BlockEntry<AnalogTorsionSpringBlock> ANALOG_TORSION_SPRING =
+            REGISTRATE.block("analog_torsion_spring", AnalogTorsionSpringBlock::new)
+                    .initialProperties(SharedProperties::stone)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .addLayer(() -> RenderType::cutoutMipped)
+                    .blockstate((c, p) -> p.directionalBlock(c.get(),
+                            blockState -> p.models().getExistingFile(p.modLoc("block/analog_torsion_spring/block"))))
+                    .tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                    .tag(BlockTags.MINEABLE_WITH_AXE)
+                    .item().transform(customItemModel())
+                    .register();
+     */
 
 
 
