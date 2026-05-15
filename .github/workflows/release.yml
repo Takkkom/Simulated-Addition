@@ -38,7 +38,7 @@ jobs:
       run: ./gradlew clearn build
     
       
-    - name: Publish (Modrinth/GitHub)
+    - name: Publish (CurseForge/Modrinth/GitHub)
       uses: Kir-Antipov/mc-publish@v3.2                                   
       with:
         #curseforge-id: 123456                                             
@@ -53,7 +53,6 @@ jobs:
         name: "${{env.RELEASE_NAME}}"                             
         version: "${{env.VERSION}}"
         version-type: release
-        changelog-file: CHANGELOG.md
 
         loaders: neoforge
         game-versions: "${{env.MINECRAFT_VERSION}}"
