@@ -15,6 +15,8 @@ A small add-on for Create: Simulated and Create: Aeronautics. It adds highly req
 - ### Floatite
   - It has extremely strong buoyancy, allowing even very heavy contraptions to float on the water's surface.
   - Even if you destroy it, you can recover it as an item.
+- ### Ballasite
+  - It's very heavy and can be used to sink contraptions or adjust the center of gravity.
 
 ## Features to be added in the future
 - ### Phantom Sail

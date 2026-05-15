@@ -2,6 +2,7 @@
   "values": [
     "simulated_addition:directional_propeller_bearing",
     "simulated_addition:directional_gyroscopic_propeller_bearing",
-    "simulated_addition:floatite"
+    "simulated_addition:floatite",
+    "simulated_addition:ballasite"
   ]
 }

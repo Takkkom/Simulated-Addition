@@ -41,6 +41,7 @@ public class SimAdditionTags {
         LOW_POWER_SAIL,
         HIGH_POWER_SAIL,
         FLOATITE,
+        BALLASITE
         ;
 
         public final TagKey<Block> tag;
@@ -73,7 +74,8 @@ public class SimAdditionTags {
     }
 
     public enum AllItemTags {
-        FLOATITE;
+        FLOATITE,
+        BALLASITE;
 
         public final TagKey<Item> tag;
 

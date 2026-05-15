@@ -21,6 +21,7 @@ public class SimAdditionRecipeProvider extends RecipeProvider {
 
     public static void registerAllProcessing(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         GENERATORS.add(new SimAdditionMixingRecipeGen(output, registries));
+        GENERATORS.add(new SimAdditionCompactingRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {
 

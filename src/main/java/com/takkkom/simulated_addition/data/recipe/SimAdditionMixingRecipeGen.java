@@ -15,7 +15,7 @@ import java.util.concurrent.CompletableFuture;
 @SuppressWarnings("unused")
 public class SimAdditionMixingRecipeGen extends MixingRecipeGen {
     GeneratedRecipe
-            TEMP_LAVA = create("floatite", b ->
+            FLOATITE = create("floatite", b ->
             b.require(AeroFluidsNeoForge.LEVITITE_BLEND.get(), 250)
                     .require(Fluids.WATER, 250)
                     .require(AllTags.AllItemTags.CASING.tag)

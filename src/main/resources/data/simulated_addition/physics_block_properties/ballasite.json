@@ -1,0 +1,14 @@
+{
+  "selector": "#simulated_addition:ballasite",
+
+  "priority": 1001,
+
+  "properties": {
+    "sable:mass": 20.0
+  },
+  "overrides": {
+    "type=double": {
+      "sable:mass": 40.0
+    }
+  }
+}

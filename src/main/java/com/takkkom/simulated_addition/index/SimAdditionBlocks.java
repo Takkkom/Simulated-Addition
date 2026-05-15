@@ -124,6 +124,27 @@ public class SimAdditionBlocks {
                     .register();
 
 
+    public static final BlockEntry<Block> BALLASITE =
+            REGISTRATE.block("ballasite", Block::new)
+                    .properties(p -> p.strength(7, 20))
+                    .properties(p -> p.sound(new SimLazySoundType(1.0f, 0.9f,
+                            AeroSoundEvents.LEVITITE_BREAK::event,
+                            () -> SoundEvents.AMETHYST_BLOCK_STEP,
+                            AeroSoundEvents.LEVITITE_PLACE::event,
+                            () -> SoundEvents.AMETHYST_BLOCK_HIT,
+                            () -> SoundEvents.AMETHYST_BLOCK_FALL)))
+                    .transform(pickaxeOnly())
+                    .tag(SimAdditionTags.AllBlockTags.BALLASITE.tag)
+                    .onRegister(connectedTextures(() -> new SimpleCTBehaviour(SimAdditionSpriteShift.BALLASITE)))
+                    .tag(SableTags.ALWAYS_CHUNK_RENDERING)
+                    .lang("Ballasite")
+                    .item()
+                    .tag(SimAdditionTags.AllItemTags.BALLASITE.tag)
+                    .tab(SimAdditionCreativeModeTabs.MAIN_TAB.getKey())
+                    .build()
+                    .register();
+
+
     public static final BlockEntry<WoodenSailBlock> OAK_SAIL =
             createWoodenSail("oak")
                     .lang("Oak Sail")

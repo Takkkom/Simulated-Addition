@@ -8,6 +8,7 @@ import static com.simibubi.create.foundation.block.connected.AllCTTypes.OMNIDIRE
 
 public class SimAdditionSpriteShift {
     public static final CTSpriteShiftEntry FLOATITE = omni("block/floatite");
+    public static final CTSpriteShiftEntry BALLASITE = omni("block/ballasite");
 
     static CTSpriteShiftEntry omni(String name) {
         return CTSpriteShifter.getCT(OMNIDIRECTIONAL,
