@@ -37,7 +37,7 @@ jobs:
     - name: Add execution permissions
       run: chmod +x ./gradlew
     - name: Build with Gradle Wrapper
-      run: ./gradlew clearn build
+      run: ./gradlew build
     
       
     - name: Publish (CurseForge/Modrinth/GitHub)
