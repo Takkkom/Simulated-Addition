@@ -48,6 +48,10 @@ jobs:
         
         modrinth-id: j55CF8YT
         modrinth-token: "${{secrets.MODRINTH_TOKEN}}"
+        modrinth-dependencies: |
+          create@6.0.10+mc1.21.1(required)
+          sable@1.2.2+mc1.21.1(required)
+          create-aeronautics@YhZLrAFC(required)
         
         #github-tag: "${{env.VERSION}}"
         #github-token: "${{secrets.GITHUB_TOKEN}}"
