@@ -18,21 +18,16 @@ import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.providers.RegistrateRecipeProvider;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import dev.eriksonn.aeronautics.index.AeroSoundEvents;
-import dev.eriksonn.aeronautics.index.AeroTags;
 import dev.ryanhcode.sable.index.SableTags;
-import dev.simulated_team.simulated.config.server.blocks.SimStress;
-import dev.simulated_team.simulated.content.blocks.torsion_spring.TorsionSpringBlock;
 import dev.simulated_team.simulated.data.SimBlockStateGen;
 import dev.simulated_team.simulated.index.SimItems;
 import dev.simulated_team.simulated.index.sounds.SimLazySoundType;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -56,6 +51,7 @@ public class SimAdditionBlocks {
                     .transform(SimAdditionStress.setImpact(2.0))
                     .transform(axeOrPickaxe())
                     .blockstate((ctx, prov) -> SimBlockStateGen.facingBlockstate(ctx, prov, "block/directional_propeller_bearing/block"))
+                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag)
                     .tag(AllTags.AllBlockTags.SAFE_NBT.tag)
                     .lang("Directional Propeller Bearing")
                     .item()
@@ -83,6 +79,7 @@ public class SimAdditionBlocks {
                     .transform(SimAdditionStress.setImpact(2.0))
                     .transform(axeOrPickaxe())
                     .blockstate((ctx, prov) -> SimBlockStateGen.facingBlockstate(ctx, prov, "block/directional_gyroscopic_propeller_bearing/block"))
+                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag)
                     .tag(AllTags.AllBlockTags.SAFE_NBT.tag)
                     .lang("Directional Gyroscopic Propeller Bearing")
                     .item()
@@ -374,6 +371,7 @@ public class SimAdditionBlocks {
                 .properties(properties -> properties.noOcclusion().mapColor(MapColor.WOOD))
                 .transform(axeOnly())
                 .blockstate(BlockStateGen.directionalBlockProvider(false))
+                .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag)
                 .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
                 .tag(SimAdditionTags.AllBlockTags.LOW_POWER_SAIL.tag)
                 .recipe((c, p) -> {
@@ -404,6 +402,7 @@ public class SimAdditionBlocks {
                 .blockstate((c, p) -> BlockStateGen.axisBlock(c, p, blockState -> p.models()
                                 .getExistingFile(SimulatedAddition.path("block/" + woodenName + "_symmetric_sail"))
                 ))
+                .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag)
                 .tag(AllTags.AllBlockTags.WINDMILL_SAILS.tag)
                 .tag(SimAdditionTags.AllBlockTags.LOW_POWER_SAIL.tag)
                 .recipe((c, p) -> ShapedRecipeBuilder.shaped(RecipeCategory.MISC, c.get(), 2)

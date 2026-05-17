@@ -5,7 +5,9 @@ import com.google.gson.JsonObject;
 import com.simibubi.create.foundation.utility.FilesHelper;
 import com.takkkom.simulated_addition.SimulatedAddition;
 import com.takkkom.simulated_addition.data.recipe.SimAdditionRecipeProvider;
+import com.takkkom.simulated_addition.ponder.SimAdditionPonderPlugin;
 import com.tterrag.registrate.providers.ProviderType;
+import net.createmod.ponder.foundation.PonderIndex;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -87,10 +89,8 @@ public class SimAdditionDatagen {
 
     private static void providePonderLang(BiConsumer<String, String> consumer) {
         // Register this since FMLClientSetupEvent does not run during datagen
-        /*
-        PonderIndex.addPlugin(new CreatePonderPlugin());
+        PonderIndex.addPlugin(new SimAdditionPonderPlugin());
 
-        PonderIndex.getLangAccess().provideLang(Create.ID, consumer);
-         */
+        PonderIndex.getLangAccess().provideLang(SimulatedAddition.MODID, consumer);
     }
 }

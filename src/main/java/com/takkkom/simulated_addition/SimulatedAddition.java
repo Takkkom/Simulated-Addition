@@ -8,8 +8,10 @@ import com.simibubi.create.foundation.item.TooltipModifier;
 import com.takkkom.simulated_addition.config.SimAdditionConfigs;
 import com.takkkom.simulated_addition.data.SimAdditionDatagen;
 import com.takkkom.simulated_addition.index.*;
+import com.takkkom.simulated_addition.ponder.SimAdditionPonderPlugin;
 import net.createmod.catnip.config.ui.BaseConfigScreen;
 import net.createmod.catnip.lang.FontHelper;
+import net.createmod.ponder.foundation.PonderIndex;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -115,6 +117,8 @@ public class SimulatedAddition {
             // Some client setup code
             //LOGGER.info("HELLO FROM CLIENT SETUP");
             //LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            PonderIndex.addPlugin(new SimAdditionPonderPlugin());
 
             BaseConfigScreen.setDefaultActionFor(MODID, base -> base
                     .withButtonLabels("Client Settings", "World Generation Settings", "Gameplay Settings")
